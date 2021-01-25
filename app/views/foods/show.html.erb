@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>品名:</strong>
+  <%= @food.name %>
+</p>
+
+<p>
+  <strong>賞味期限:</strong>
+  <%= @food.expiration_date %>
+</p>
+
+<p>
+  <strong>値段:</strong>
+  <%= @food.price %>円
+</p>
+
+<p>
+  <strong>一言:</strong>
+  <%= @food.remark %>
+</p>
+
+<%= link_to '編集', edit_food_path(@food) %> |
+<%= link_to '戻る', foods_path %>
